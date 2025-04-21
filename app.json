@@ -1,34 +1,42 @@
 {
-    "expo": {
-      "name": "Visitor Management System",
-      "slug": "visitor-management-system",
-      "version": "1.0.0",
-      "orientation": "portrait",
-      "icon": "./assets/images/icon.png",
-      "scheme": "myapp",
-      "userInterfaceStyle": "automatic",
-      "newArchEnabled": true,
-      "splash": {
-        "image": "./assets/images/splash-icon.png",
-        "resizeMode": "contain",
+  "expo": {
+    "name": "Visitor Management System",
+    "slug": "visitor-management-system",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.visitor-management-system"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "ios": {
-        "supportsTablet": true,
-        "bundleIdentifier": "app.rork.visitor-management-system"
+      "package": "app.rork.visitor-management-system"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
       },
-      "android": {
-        "adaptiveIcon": {
-          "foregroundImage": "./assets/images/adaptive-icon.png",
-          "backgroundColor": "#ffffff"
-        },
-        "package": "app.rork.visitor-management-system"
-      },
-      "plugins": [
-        "expo-router"
-      ],
-      "experiments": {
-        "typedRoutes": true
+      "eas": {
+        "projectId": "ea7380af-e836-498c-a34b-e963e95a77b2"
       }
     }
   }
+}
