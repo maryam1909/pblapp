@@ -6,6 +6,7 @@ import { useAuthStore } from '@/store/auth-store';
 import NotificationBadge from '@/components/NotificationBadge';
 import { Home, ClipboardList, Bell, User } from 'lucide-react-native';
 
+
 export default function OwnerTabsLayout() {
   const { user } = useAuthStore();
   const { notifications } = useNotificationStore();
